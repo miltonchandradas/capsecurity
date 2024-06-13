@@ -9,7 +9,13 @@
       "description": "CustomerSupport"
     }
   ],
-  "attributes": [],
+  "attributes": [
+    {
+      "name": "country",
+      "description": "Country",
+      "valueType": "string"
+    }
+  ],
   "role-templates": [
     {
       "name": "Manager",
@@ -17,7 +23,9 @@
       "scope-references": [
         "$XSAPPNAME.Manager"
       ],
-      "attribute-references": []
+      "attribute-references": [
+        { "name": "country" }
+      ]
     },
     {
       "name": "CustomerSupport",
@@ -25,7 +33,9 @@
       "scope-references": [
         "$XSAPPNAME.CustomerSupport"
       ],
-      "attribute-references": []
+      "attribute-references": [
+        { "name": "country" }
+      ]
     }
   ],
   "xsappname": "capsecurity",

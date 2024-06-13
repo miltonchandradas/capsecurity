@@ -5,8 +5,8 @@ service SupplierService
 {
     annotate Suppliers with @restrict :
     [
-        { grant : [ '*' ], to : [ 'Manager' ] },
-        { grant : [ 'READ' ], to : [ 'CustomerSupport' ] }
+        { grant : [ '*' ], to : [ 'Manager' ], where: 'country = $user.country' },
+        { grant : [ 'READ' ], to : [ 'CustomerSupport' ], where: 'country = $user.country' }
     ];
 
     entity Suppliers as
