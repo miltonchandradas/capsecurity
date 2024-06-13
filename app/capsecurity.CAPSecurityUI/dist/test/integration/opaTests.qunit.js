@@ -1,0 +1,2 @@
+sap.ui.require(["sap/fe/test/JourneyRunner","capsecurity/CAPSecurityUI/test/integration/FirstJourney","capsecurity/CAPSecurityUI/test/integration/pages/SuppliersList","capsecurity/CAPSecurityUI/test/integration/pages/SuppliersObjectPage"],function(e,t,r,i){"use strict";var e=new e({launchUrl:sap.ui.require.toUrl("capsecurity/CAPSecurityUI")+"/index.html"});e.run({pages:{onTheSuppliersList:r,onTheSuppliersObjectPage:i}},t.run)});
+//# sourceMappingURL=opaTests.qunit.js.map
