@@ -1,0 +1,33 @@
+{
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.Manager",
+      "description": "Manager"
+    },
+    {
+      "name": "$XSAPPNAME.CustomerSupport",
+      "description": "CustomerSupport"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "Manager",
+      "description": "All access",
+      "scope-references": [
+        "$XSAPPNAME.Manager"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "CustomerSupport",
+      "description": "READ access",
+      "scope-references": [
+        "$XSAPPNAME.CustomerSupport"
+      ],
+      "attribute-references": []
+    }
+  ],
+  "xsappname": "capsecurity",
+  "tenant-mode": "dedicated"
+}
