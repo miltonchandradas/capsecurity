@@ -24,7 +24,7 @@
         "$XSAPPNAME.Manager"
       ],
       "attribute-references": [
-        { "name": "country" }
+        { "name": "country", "default-values": ["US"]  }
       ]
     },
     {
@@ -34,10 +34,10 @@
         "$XSAPPNAME.CustomerSupport"
       ],
       "attribute-references": [
-        { "name": "country" }
+        { "name": "country", "default-values": ["US"]  }
       ]
     }
   ],
-  "xsappname": "capsecurity",
+  "xsappname": "capsecurity-dev",
   "tenant-mode": "dedicated"
 }
