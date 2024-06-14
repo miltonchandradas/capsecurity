@@ -1,5 +1,5 @@
 {
   "ProjectOverviewURL": "https://partner-certification-wgb7g6jl.launchpad.cfapps.eu10.hana.ondemand.com/lcapcapsecurity.capsecurityLaunchpad-1.0.0",
-  "DeployedUTCTime": "2024-06-13T17:05:40.238Z",
+  "DeployedUTCTime": "2024-06-13T23:06:49.131Z",
   "ApplicationLogURL": "https://logs.cf.eu10-004.hana.ondemand.com/app/dashboards#/view/Overview?_g=(filters:!((query:(match_phrase:(component_name:capsecurity-srv)))))"
 }

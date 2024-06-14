@@ -167,7 +167,7 @@ resources:
       service: xsuaa
       service-plan: application
       service-name: capsecurity-uaa
-      path: xs-security.json
+      path: ./xs-security.json
       config:
         oauth2-configuration:
           redirect-uris:

@@ -24,7 +24,7 @@
         "$XSAPPNAME.Manager"
       ],
       "attribute-references": [
-        { "name": "country", "default-values": ["US"]  }
+        { "name": "country", "default-values": ["US"] }
       ]
     },
     {
