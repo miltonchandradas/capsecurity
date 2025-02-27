@@ -91,29 +91,27 @@ modules:
               ServiceInstanceName: capsecurity-uaa
               ServiceKeyName: capsecurity-uaa-key
               sap.cloud.service: lcap.capsecurity
+              HTML5.Timeout: 120000
             - Authentication: OAuth2UserTokenExchange
               Name: capsecurity-app-srv
               TokenServiceInstanceName: capsecurity-uaa
               TokenServiceKeyName: capsecurity-uaa-key
               URL: ~{srv-api/srv-url}
               sap.cloud.service: lcap.capsecurity
+              HTML5.Timeout: 120000
             - Name: capsecurity-service-html5-apps-repo-host
               ServiceInstanceName: capsecurity-html5-apps-repo-host
               ServiceKeyName: capsecurity-html5-apps-repo-host-key
               sap.cloud.service: lcap.capsecurity
+              HTML5.Timeout: 120000
             - Authentication: OAuth2UserTokenExchange
               Name: capsecurity-SupplierService
               TokenServiceInstanceName: capsecurity-uaa
               TokenServiceKeyName: capsecurity-uaa-key
               URL: ~{srv-api/srv-url}/service/suppliers
               sap.cloud.service: lcap.capsecurity
-              sap.applicationdevelopment.actions.enabled: false
               sap.build.usage: CAP
-              sap.processautomation.enabled: false
-              HTML5.DynamicDestination: false
-              WebIDEEnabled: false
-              MobileEnabled: false
-              AppgyverEnabled: false
+              HTML5.Timeout: 120000
     build-parameters:
       no-source: true
     requires:
