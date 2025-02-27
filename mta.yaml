@@ -25,6 +25,8 @@ build-parameters:
     - builder: custom
       commands:
         - npm install
+
+
 modules:
   - name: capsecurity-capsecurity.CAPSecurityUI
     type: html5
@@ -160,6 +162,8 @@ modules:
       - name: capsecurity-service-html5-apps-repo-host
         parameters:
           content-target: true
+
+
 resources:
   - type: org.cloudfoundry.managed-service
     name: capsecurity-service-uaa
