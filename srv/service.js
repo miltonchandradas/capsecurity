@@ -10,16 +10,18 @@ module.exports = async (srv) => {
   };
 
 
-  srv.before("*", (req) => {
-    console.log("JWT Token: ", req.headers.authorization);
-  });
+  // srv.before("*", (req) => {
+  //   console.log("JWT Token: ", req.headers.authorization);
+  // });
+
+  srv.on("longRunningAction", async (req) => {
+    await delay(45000);
+    return "Long running action is complete..."
+  })
 
   srv.on("READ", Suppliers, async (req, next) => {
     await delay(45000);
-    return await next;
-    // console.log("Country: ", req.user?.attr?.country);
-    // let suppliers = await SELECT.from(Suppliers).where({
-    //   country: req.user?.attr?.country,
-    // });
+    return await next();
   });
+
 };

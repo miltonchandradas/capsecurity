@@ -69,6 +69,11 @@ annotate service.Suppliers with @(
             Label : 'Country',
             Value : country,
         },
+        {
+            $Type : 'UI.DataFieldForAction',
+            Action: 'service.longRunningAction',
+            Label: 'Long Running Action'
+        },
     ],
 );
 

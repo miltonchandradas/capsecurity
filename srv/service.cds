@@ -1,16 +1,19 @@
-using { db as my } from '../db/schema';
+using {db as my} from '../db/schema';
 
-@path : '/service/suppliers'
-service SupplierService
-{
+@path: '/service/suppliers'
+service SupplierService {
     // annotate Suppliers with @restrict :
     // [
     //     { grant : [ '*' ], to : [ 'Manager' ], where: 'country = $user.country' },
     //     { grant : [ 'READ' ], to : [ 'CustomerSupport' ], where: 'country = $user.country' }
     // ];
 
-    entity Suppliers as
-        projection on my.Suppliers;
+    entity Suppliers as projection on my.Suppliers
+        actions {
+            action longRunningAction() returns String;
+        };
+
+
 }
 
 // annotate SupplierService with @requires :
